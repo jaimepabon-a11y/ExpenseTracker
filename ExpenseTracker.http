@@ -1,0 +1,15 @@
+@host = http://localhost:5184
+
+POST {{host}}/api/gastos
+Content-Type: application/json
+
+{
+  "descripcion": "Pasajes de la semana",
+  "valor": 40000,
+  "fecha": "2026-09-28",
+  "categoria": "Transporte"
+}
+
+###
+
+GET {{host}}/api/gastos
